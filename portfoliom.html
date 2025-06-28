@@ -1,0 +1,287 @@
+# Portfolio
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meemansa Sikarwar | Portfolio</title>
+    
+    <!-- AOS (Animate On Scroll) CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+    <style>
+        :root {
+            --bg-color: #ffebee; /* Changed to soft pink */
+            --card-bg: rgba(255, 255, 255, 0.3);
+            --text-color: #333;
+            --primary-color: #6c63ff;
+            --hover-color: #5753d9;
+            --glass-blur: 10px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            scroll-behavior: smooth;
+            line-height: 1.6;
+        }
+
+        header {
+            background: var(--primary-color);
+            padding: 20px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            color: white;
+            box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            font-size: 2.5em;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 1.1em;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: var(--hover-color);
+        }
+
+        main {
+            padding: 50px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        section {
+            width: 80%;
+            max-width: 900px;
+            background: var(--card-bg);
+            backdrop-filter: blur(var(--glass-blur));
+            padding: 40px;
+            border-radius: 15px;
+            margin: 20px 0;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        section:hover {
+            transform: scale(1.02);
+            box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+            color: var(--primary-color);
+        }
+
+        .about img {
+            width: 180px;
+            border-radius: 50%;
+            border: 5px solid var(--primary-color);
+            margin-bottom: 20px;
+            transition: transform 0.5s ease;
+        }
+
+        .about img:hover {
+            transform: scale(1.1);
+        }
+
+        .resume button {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            cursor: pointer;
+            font-size: 1em;
+            border-radius: 30px;
+            transition: background 0.3s ease;
+        }
+
+        .resume button:hover {
+            background: var(--hover-color);
+        }
+
+        ul {
+            text-align: left;
+            margin-top: 10px;
+            padding-left: 20px;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background: var(--primary-color);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        footer a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+            font-size: 1.1em;
+            transition: color 0.3s;
+        }
+
+        footer a:hover {
+            color: var(--hover-color);
+        }
+
+        @media screen and (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+            }
+
+            section {
+                width: 95%;
+            }
+
+            .about img {
+                width: 130px;
+            }
+
+            footer {
+                position: relative;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#Achievements">Achievements</a></li> 
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+   <header>
+    <h1>MEEMANSA SIKARWAR</h1>
+    <p>Web Developer | Data Analyst | Frontend & Backend Coder</p>
+  </header>
+
+    <main>
+        <section id="about" class="about" data-aos="fade-up">
+            <h2>About Me</h2>
+            <img src="file:///C:/Users/admin/Downloads/IMG_0290.JPEG" alt="Your Photo"/>
+            <p>A highly motivated and detail-oriented BCA student with
+a strong foundation in computer applications,
+programming languages, and software development.
+Passionate about technology and eager to apply
+academic knowledge in a practical environment. Skilled
+in C, Java, Python, and database management, with
+excellent problem-solving and communication abilities.
+Seeking an internship or entry-level opportunity to
+contribute to innovative projects while continuing to
+learn and grow in the IT field.</p>
+        </section>
+
+        <section id="Skills" data-aos="fade-left">
+            <h2>Skills</h2>
+            <ul>
+                <li>Programming (C, C++, Java, Python)
+	•	Learning these languages helps you build software, automate tasks, and solve complex problems efficiently.</li>
+                <li>Web Development (HTML, CSS, JavaScript)
+	•	These technologies are used to create and design interactive and responsive websites.</li>
+                <li>Database Management (SQL, MySQL)
+	•	Understanding databases allows you to store, manage, and retrieve data for applications effectively.</li>
+                <li>Problem-Solving & Logical Thinking
+	•	Crucial for writing efficient code and developing innovative tech solutions by analyzing and breaking down problems.</li>
+                <li>Software Development & OOP Concepts
+	•	Involves designing applications using Object-Oriented Programming principles like classes and objects for cleaner, modular code.</li>
+            </ul>
+        </section>
+        
+        <section id="Achievements" data-aos="fade-left">
+            <h2>Achievements</h2>
+            <ul>
+                <li> 2023 – 2024
+                   •  Managed five projects in our
+                      University as a group leader.</li>
+                <li> Personal Portfolio Website
+                   •  Role: Developer
+                      Created a responsive personal website using HTML, CSS, andJavaScript to showcase projects and skills.</li>
+                <li> 2022-2023
+                   •  Gold medalist in inter house school competition.</li>
+              <li>    Got second position in modeling.</li>
+              
+              <li>    Volunteer Work: Assisted in organizing NGO and
+                      workshops, contributing to help needy peoples and clean and green environment.</li>
+            </ul>
+        </section>
+
+        <section id="projects" data-aos="fade-right">
+            <h2>Projects</h2>
+            <ul>
+                <li><strong>Car Showcase Website:</strong> Static site displaying car models and details.</li>
+                <li><strong>Created a information website:</strong> User can give reviews for the changes of the website.</li>
+            </ul>
+        </section>
+
+        <section id="resume" class="resume" data-aos="zoom-in">
+            <h2>Resume</h2>
+            <a href="file:///C:/Users/admin/Downloads/Blue%20Modern%20Professional%20CV%20Resume%20(2)%20(7).pdf" download><button>Download Resume</button></a>
+        </section>
+
+        <section id="contact" data-aos="fade-up">
+            <h2>Contact Me</h2>
+            <p>Email: meemansasikarwar@gmail.com</p>
+            <p>Phone: +91 8287004515</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>All Rights Reserved</p>
+        <p>
+            <a href="#">Instagram</a> |
+            <a href="#">LinkedIn</a> |
+            <a href="#">Twitter</a>
+        </p>
+    </footer>
+
+    <!-- AOS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+    </script>
+</body>
+</html>
